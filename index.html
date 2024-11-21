@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMI Calculator</title>
+   
+  </head>
+  <style>
+    .innerdiv{
+      padding: 15px;
+      background-color: rgb(245, 136, 245);
+      border-radius: 100px;
+      
+    }
+    #Interest,#amount,#tenure{
+      padding: 10px;
+      width: 300px;
+    }
+  </style>
+  <body>
+    <h1><center> EMI CALCULATOR</center></h1>
+    <hr>
+    <div style="margin-top: 10%; background-color: rgb(0, 34, 255) ; width: 500px;margin-left: 33%; ">
+      <center>
+        <div class="innerdiv">
+          <input
+            type="text"
+            id="amount"
+            name="amount"
+            placeholder="Enter Total Amount"
+          />
+        </div>
+        <div class="innerdiv">
+          <input
+            type="text"
+            id="Interest"
+            name="Interest"
+            placeholder="Enter Interest Rate"
+          />
+        </div>
+        <div class="innerdiv">
+          <input
+            type="text"
+            id="tenure"
+            name="tenure"
+            placeholder="Enter Tenure Period"
+          />
+        </div>
+        <div class="innerdiv">
+          <input type="button" value="EMI" onclick="EMIcalculation()" />
+        </div>
+
+        <div class="innerdiv">
+          <label >EMI PER MONTH IS :<span id="emiamount" name="emiamount">0</span></label>
+        </div>
+      </center>
+    </div>
+    <script type="text/javascript" src="emi.js"></script>
+  </body>
+</html>
